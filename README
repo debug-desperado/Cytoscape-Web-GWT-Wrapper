@@ -1,0 +1,25 @@
+This project is simply a thin wrapper around the Cytoscape Web API.  Include it 
+in your project as you would a normal GWT module.
+
+**Configuration**
+- Library is by default set to use the human-readable javascript files to 
+  assist with debugging.  To change over to the minimized files to improve
+  performance, edit the CytoscapeWeb.gwt.xml file.
+
+**Known Issues**
+- Project has issues, with Firefox 4+, but not Firefox 3.6.  The problem likely
+  has to do with the frame that Flash gets put into.  See my Google Group
+  discussion link at the bottom of the README.
+- Wrapper is perhaps too thin, as many of the parameters are simply GWT's 
+  JavaScriptObject.  More objects should be created to simplify interaction
+  with the library.  Prefer the methods with String parameters to simplify
+  things.
+- Based on Version 0.7.3, which is dated.  API should be updated to open up the
+  features of the latest releases.
+
+**Useful Links**
+http://cytoscapeweb.cytoscape.org/documentation
+http://code.google.com/webtoolkit/doc/latest/DevGuideOrganizingProjects.html#DevGuideModules
+http://code.google.com/webtoolkit/doc/latest/DevGuideCodingBasicsJSNI.html
+http://code.google.com/webtoolkit/doc/latest/DevGuideCodingBasicsOverlay.html
+http://groups.google.com/group/google-web-toolkit/browse_thread/thread/fd0514fa30818bfb/b7b1f058b65833b1?lnk=gst&q=cytoscape+web#b7b1f058b65833b1
